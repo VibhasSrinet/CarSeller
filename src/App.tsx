@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import Header from "./header";
+import Footer from "./foooter";
+import Home from "./Components/Home/Home";
+import List from "./Components/List";
+import CarList from "./CarListData.json";
+import CarDetails from "./Components/CarDetails";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
+  const [carList, setCarList] = useState(CarList);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home carList={carList} />}></Route>
+          <Route path="/list" element={<List />}></Route>
+          <Route path="/carDetail" element={<CarDetails />}></Route>
+        </Routes>
+      </Router>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,14 @@
+.featured-headings {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+li {
+  margin: 20px;
+}
+
+.CarCard {
+  border-style: solid;
+  width: 80px;
+  display: inline-block;
+}

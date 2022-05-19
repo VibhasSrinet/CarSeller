@@ -1,0 +1,22 @@
+[
+  {
+    "carName": "Tesla",
+    "isBooked": true,
+    "launchDate": "2012-11-30T04:30:00.000Z"
+  },
+  {
+    "carName": "Mahendra",
+    "isBooked": true,
+    "launchDate": "2021-11-12T04:30:00.000Z"
+  },
+  {
+    "carName": "Toyota",
+    "isBooked": true,
+    "launchDate": "2022-04-30T04:30:00.000Z"
+  },
+  {
+    "carName": "Suzuki",
+    "isBooked": false,
+    "launchDate": "2022-08-30T04:30:00.000Z"
+  }
+]
