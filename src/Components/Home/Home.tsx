@@ -52,7 +52,7 @@ function Home(props: any) {
         </nav>
         <div className="cards-group">
           {featuredList.map((car: any) => (
-            <CarCard car={car} key={car.carName} />
+            <CarCard car={car} key={car.carId} />
           ))}
         </div>
       </div>
