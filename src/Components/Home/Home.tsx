@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import CarCard from "../CarCard";
 function Home(props: any) {
   const [featuredList, setfeaturedList] = useState(props.carList);
+  const [searchText, setSearchText] = useState("");
   useEffect(() => {
     setfeaturedList((featuredList: any) => {
       return featuredList.filter((item: any) => item.isBooked);
@@ -20,11 +21,16 @@ function Home(props: any) {
       });
     });
   };
+  const handleCahnge = (e: any) => {
+    setSearchText(e.target.value);
+  };
+
   const listofPopular = () => {
     setfeaturedList(() => {
       return props.carList.filter((item: any) => item.isBooked);
     });
   };
+
   const listofUpcoming = () => {
     setfeaturedList(() => {
       return props.carList.filter((item: any) => {
@@ -38,8 +44,8 @@ function Home(props: any) {
   };
   return (
     <div className="Home">
-      <input type="text" />
-      <Link to="list">
+      <input type="text" value={searchText} onChange={handleCahnge} />
+      <Link to={`/list/${searchText}`}>
         <button>Press</button>
       </Link>
       <div>
@@ -48,6 +54,9 @@ function Home(props: any) {
             <li onClick={listofPopular}>Popular</li>
             <li onClick={listofJustLaunched}>Just Launched</li>
             <li onClick={listofUpcoming}>Upcoming</li>
+            <li>
+              <Link to="/list/all">View all</Link>
+            </li>
           </ul>
         </nav>
         <div className="cards-group">

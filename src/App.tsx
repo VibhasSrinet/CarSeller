@@ -34,7 +34,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home carList={carList} />}></Route>
-        <Route path="/list" element={<List />}></Route>
+        <Route
+          path="/list/:searchText"
+          element={<List carList={carList} />}
+        ></Route>
         <Route
           path="/carDetail/:id"
           element={<CarDetails carList={carList} />}

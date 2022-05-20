@@ -5,6 +5,7 @@ function CarDetails({ carList }: any) {
   const { id } = useParams();
   const [carItem, setCarItem] = useState({
     carName: "",
+    isBooked: false,
   });
   useEffect(() => {
     const carItem = carList.find((car: any) => car.carId === id);
@@ -14,7 +15,7 @@ function CarDetails({ carList }: any) {
     <div className="CarDetails">
       <h1>{carItem.carName}</h1>
       <Link to="/bookingDetails" state={{ carItem: carItem }}>
-        <button>Book Now</button>
+        <button disabled={carItem.isBooked}>Book Now</button>
       </Link>
     </div>
   );

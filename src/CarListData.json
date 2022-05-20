@@ -1,26 +1,30 @@
 [
   {
     "carId": "1",
-    "carName": "Tesla",
+    "carName": "BMW X2",
     "isBooked": false,
-    "launchDate": "2012-11-30T04:30:00.000Z"
+    "launchDate": "2012-11-30T04:30:00.000Z",
+    "carType": "Sedan"
   },
   {
     "carId": "2",
     "carName": "Mahendra",
     "isBooked": false,
-    "launchDate": "2021-11-12T04:30:00.000Z"
+    "launchDate": "2021-11-12T04:30:00.000Z",
+    "carType": "SUV"
   },
   {
     "carId": "3",
     "carName": "Toyota",
     "isBooked": false,
-    "launchDate": "2022-04-30T04:30:00.000Z"
+    "launchDate": "2022-04-30T04:30:00.000Z",
+    "carType": "Hatchback"
   },
   {
     "carId": "4",
     "carName": "Suzuki",
     "isBooked": false,
-    "launchDate": "2022-08-30T04:30:00.000Z"
+    "launchDate": "2022-08-30T04:30:00.000Z",
+    "carType": "Coupe"
   }
 ]
