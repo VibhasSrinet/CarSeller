@@ -1,14 +1,150 @@
 .featured-headings {
   display: flex;
-  list-style: none;
-  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgb(237, 236, 236);
+  width: max-content;
+  padding-right: 1rem;
 }
-li {
-  margin: 20px;
+.heading {
+  font-size: 2rem !important;
+  margin-left: 2rem;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3rem 0;
 }
 
 .CarCard {
   border-style: solid;
   width: 80px;
   display: inline-block;
+}
+
+.cards-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.banner-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 26px;
+  color: white;
+  flex-wrap: wrap;
+}
+.herosection {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  padding: 140px 0 120px;
+  text-align: center;
+  z-index: 1;
+  height: 520px;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+.sedan {
+  background: url("../../asset/SEDAN\ BKG.png"), rgba(14, 13, 13, 0.5);
+}
+
+.suv {
+  background: url("../../asset/SUV\ BKG.png"), rgba(14, 13, 13, 0.5);
+}
+.hatchback {
+  background: url("../../asset/HATCHBACK\ BKG.png"), rgba(14, 13, 13, 0.5);
+}
+.coupe {
+  background: url("../../asset/cOUPE\ BKG.png"), rgba(14, 13, 13, 0.5);
+}
+
+.arrowIcon {
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  height: 15rem;
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../asset/BigCross.png");
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  justify-content: space-between;
+}
+
+.btn {
+  color: white !important;
+  font-weight: 500 !important;
+  width: 7rem;
+  font-size: 1.5rem !important;
+  background-color: rgb(121, 14, 34) !important;
+  border: 2px solid white !important;
+  text-align: center;
+}
+
+.form-control {
+  border-radius: 0 !important;
+}
+
+nav {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.category {
+  margin: 1rem;
+  height: 70%;
+  text-align: center;
+  color: rgb(123, 123, 123);
+  padding: 0.5rem 2rem !important;
+  cursor: pointer;
+}
+.active {
+  background-color: black;
+  color: white;
+}
+.category span {
+  vertical-align: middle;
+}
+
+.viewall {
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+.viewall span {
+  color: black !important ;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.topnav div {
+  color: white;
+  text-align: center;
+  padding: 1rem 1rem 0 1rem;
+  height: 3rem;
+  text-decoration: none;
+  font-size: 0.7rem;
+  border-bottom: 3px solid gray;
+}
+
+.activated {
+  font-size: 1rem !important;
+  border-bottom: 3px solid white !important;
 }

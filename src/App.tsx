@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import Header from "./header";
-import Footer from "./foooter";
+import Header from "./header/header";
+import Footer from "./footer/foooter";
 import Home from "./Components/Home/Home";
 import List from "./Components/List";
 import CarList from "./CarListData.json";
-import CarDetails from "./Components/CarDetails";
+import CarDetails from "./Components/CarDetails/CarDetails";
 import {
   BrowserRouter as Router,
   Routes,

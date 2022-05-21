@@ -1,0 +1,37 @@
+.nav-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+
+  text-transform: uppercase;
+}
+.mid-navs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: white !important;
+}
+
+.topnav {
+  background-color: rgb(31, 30, 30);
+  overflow: hidden;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+}

@@ -1,30 +1,74 @@
 [
   {
     "carId": "1",
-    "carName": "BMW X2",
+    "carName": "Audi A2",
     "isBooked": false,
     "launchDate": "2012-11-30T04:30:00.000Z",
-    "carType": "Sedan"
+    "carType": "Sedan",
+    "baseRate": "20 lakh onwards",
+    "image": "Audi A2.png"
   },
   {
     "carId": "2",
-    "carName": "Mahendra",
+    "carName": "Audi A6",
     "isBooked": false,
     "launchDate": "2021-11-12T04:30:00.000Z",
-    "carType": "SUV"
+    "carType": "SUV",
+    "baseRate": "30 lakh onwards",
+    "image": "Audi A6.png"
   },
   {
     "carId": "3",
-    "carName": "Toyota",
+    "carName": "Bugatti Veyron",
     "isBooked": false,
     "launchDate": "2022-04-30T04:30:00.000Z",
-    "carType": "Hatchback"
+    "carType": "Hatchback",
+    "baseRate": "40 lakh onwards",
+    "image": "Bugatti Veyron.png"
   },
   {
     "carId": "4",
-    "carName": "Suzuki",
+    "carName": "BMW X3",
     "isBooked": false,
     "launchDate": "2022-08-30T04:30:00.000Z",
-    "carType": "Coupe"
+    "carType": "Coupe",
+    "baseRate": "50 lakh onwards",
+    "image": "BMW X3.png"
+  },
+  {
+    "carId": "5",
+    "carName": "BMW X6",
+    "isBooked": false,
+    "launchDate": "2012-11-30T04:30:00.000Z",
+    "carType": "Sedan",
+    "baseRate": "20 lakh onwards",
+    "image": "BMW X6.png"
+  },
+  {
+    "carId": "6",
+    "carName": "Ford Mustang",
+    "isBooked": false,
+    "launchDate": "2021-11-12T04:30:00.000Z",
+    "carType": "SUV",
+    "baseRate": "30 lakh onwards",
+    "image": "Ford Mustang.png"
+  },
+  {
+    "carId": "7",
+    "carName": "Porsche Carrera",
+    "isBooked": false,
+    "launchDate": "2022-04-30T04:30:00.000Z",
+    "carType": "Hatchback",
+    "baseRate": "40 lakh onwards",
+    "image": "Porsche Carrera.png"
+  },
+  {
+    "carId": "8",
+    "carName": "RollsRoyce Silver Cloud",
+    "isBooked": false,
+    "launchDate": "2022-08-30T04:30:00.000Z",
+    "carType": "Coupe",
+    "baseRate": "50 lakh onwards",
+    "image": "RollsRoyce Silver Cloud.png"
   }
 ]

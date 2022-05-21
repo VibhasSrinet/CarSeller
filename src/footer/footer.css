@@ -1,0 +1,45 @@
+.Footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1rem !important;
+  font-weight: 550 !important;
+}
+
+.contacts {
+  width: 20%;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacts div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.forlinks {
+  text-decoration: none !important;
+}
+
+.address {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.icons img {
+  margin: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+}
