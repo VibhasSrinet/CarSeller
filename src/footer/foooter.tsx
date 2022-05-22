@@ -11,22 +11,22 @@ function Footer() {
         <h2>Contact</h2>
         <div>
           <div>
-            <Link className="forlinks" to="#">
+            <Link className="forlinks" to="/">
               Request a Test Drive
             </Link>
           </div>
           <div>
-            <Link className="forlinks" to="#">
+            <Link className="forlinks" to="/">
               Book Car
             </Link>
           </div>
           <div>
-            <Link className="forlinks" to="#">
+            <Link className="forlinks" to="/">
               Career
             </Link>
           </div>
           <div>
-            <Link className="forlinks" to="#">
+            <Link className="forlinks" to="/">
               Contact Us
             </Link>
           </div>
@@ -47,17 +47,17 @@ function Footer() {
         <h2>Legal</h2>
         <div>
           <div>
-            <Link className="forlinks" to="#">
+            <Link className="forlinks" to="/">
               Legal Legal Disclaimer/Imprint
             </Link>
           </div>
           <div>
-            <Link className="forlinks" to="#">
+            <Link className="forlinks" to="/">
               Privacy Policy
             </Link>
           </div>
           <div>
-            <Link className="forlinks" to="#">
+            <Link className="forlinks" to="/">
               Cookie Policy
             </Link>
           </div>
@@ -66,13 +66,13 @@ function Footer() {
       <div className="contacts">
         <h2>Connect with us</h2>
         <div className="icons">
-          <Link to="#">
+          <Link to="/">
             <img src={fb} />
           </Link>
-          <Link to="#">
+          <Link to="/">
             <img src={twitter} />
           </Link>
-          <Link to="#">
+          <Link to="/">
             <img src={insta} />
           </Link>
         </div>

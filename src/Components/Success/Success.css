@@ -1,0 +1,62 @@
+.successImage {
+  height: 10rem;
+  width: 12rem;
+  margin-bottom: 1rem;
+}
+.Success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+.successBox {
+  padding: 3rem;
+  border: 1.5px solid black;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.explore {
+  width: 100%;
+  display: flex;
+}
+.explore img {
+  width: 70%;
+}
+
+.explore div {
+  width: 30%;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.explore p {
+  position: relative;
+  top: 8rem;
+  z-index: 1;
+  left: -1.2rem;
+}
+.download {
+  color: rgb(121, 14, 34);
+  text-decoration: underline;
+
+  margin-right: 0.3rem;
+}
+.downloadText {
+  display: flex;
+  font-weight: bolder;
+}
+
+.explre-border {
+  border: 1px solid white;
+  width: 60% !important;
+  height: 70%;
+  position: relative;
+  top: 2.7rem;
+  left: 8rem;
+}

@@ -2,26 +2,27 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../asset/Union.png";
 import "./header.css";
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="Header">
       <nav className="navbar navbar-dark bg-dark">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           <img src={logo} />
           <span>Xtremecars</span>
-        </a>
+        </Link>
         <div className="mid-navs">
-          <a className="nav-link" href="#">
+          <Link className="nav-link" to="/">
             New Cars
-          </a>
+          </Link>
 
-          <a className="nav-link" href="#">
+          <Link className="nav-link" to="/">
             Used Cars
-          </a>
+          </Link>
         </div>
-        <a className="nav-link" href="#">
+        <Link className="nav-link" to="/">
           My profile
-        </a>
+        </Link>
       </nav>
     </div>
   );
