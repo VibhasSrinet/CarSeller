@@ -115,19 +115,32 @@ function Home(props: any) {
   return (
     <div className="Home">
       <div className="topnav">
-        <div onClick={() => setActivation("Sedan")} className={classSedan}>
+        <div
+          style={{ cursor: "pointer" }}
+          onClick={() => setActivation("Sedan")}
+          className={classSedan}
+        >
           SEDAN
         </div>
-        <div onClick={() => setActivation("SUV")} className={classSUV}>
+        <div
+          style={{ cursor: "pointer" }}
+          onClick={() => setActivation("SUV")}
+          className={classSUV}
+        >
           SUV
         </div>
         <div
+          style={{ cursor: "pointer" }}
           onClick={() => setActivation("Hatchback")}
           className={classHatchback}
         >
           Hatchback
         </div>
-        <div onClick={() => setActivation("Coupe")} className={classCoupe}>
+        <div
+          style={{ cursor: "pointer" }}
+          onClick={() => setActivation("Coupe")}
+          className={classCoupe}
+        >
           Coupe
         </div>
       </div>

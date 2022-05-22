@@ -35,10 +35,8 @@ function Footer() {
       <div className="address">
         <h2>Xtremecars</h2>
         <p>
-          12th Floor, Vishwaroop IT
-          <br /> Park , Sector 32, Vashi,
-          <br /> Navi Mumbai - 400705.
-          <br /> Maharashtra, India.
+          12th Floor, Vishwaroop IT Park , Sector 32, Vashi, Navi Mumbai -
+          400705. Maharashtra, India.
         </p>
         <p>
           <br />
