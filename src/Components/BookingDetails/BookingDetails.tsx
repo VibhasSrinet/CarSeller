@@ -1,11 +1,29 @@
-import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useLocation, useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import "./BookingDetails.css";
 import blackArrow from "../../asset/blackArrow.png";
 import { useNavigate } from "react-router-dom";
 function BookingDetails(props: any) {
-  const { carItem }: any = useLocation().state;
+  const { id } = useParams();
+  const [carItem, setCarItem] = useState({
+    carId: "",
+    carName: "",
+    isBooked: false,
+    fuelType: "",
+    engine: "",
+    torque: "",
+    acceleration: "",
+    topSpeed: "",
+    variants: "",
+    exteriors: "",
+    interiorFinishes: [],
+    cost: "",
+  });
+  useEffect(() => {
+    const carItem = props.carList.find((car: any) => car.carId === id);
+    setCarItem(carItem);
+  }, []);
   const {
     register,
     formState: { errors },

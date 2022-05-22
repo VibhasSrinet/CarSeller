@@ -93,7 +93,7 @@ function CarDetails({ carList }: any) {
           <div className="interior-color"></div>
           <ul>
             {carItem.interiorFinishes.map((interiorFinish) => (
-              <li>{interiorFinish}</li>
+              <li key={interiorFinish}>{interiorFinish}</li>
             ))}
           </ul>
         </div>
@@ -103,7 +103,7 @@ function CarDetails({ carList }: any) {
             <b>{carItem.cost}</b>
           </h4>
         </div>
-        <Link to="/bookingDetails" state={{ carItem: carItem }}>
+        <Link to={`/bookingDetails/${id}`} state={{ carItem: carItem }}>
           <button className="bookButton" disabled={carItem.isBooked}>
             BOOK NOW
           </button>

@@ -43,8 +43,8 @@ function App() {
           element={<CarDetails carList={carList} />}
         ></Route>
         <Route
-          path="bookingDetails"
-          element={<BookingDetails onBook={bookACar} />}
+          path="/bookingDetails/:id"
+          element={<BookingDetails carList={carList} onBook={bookACar} />}
         ></Route>
         <Route path="success" element={<Success />}></Route>
       </Routes>

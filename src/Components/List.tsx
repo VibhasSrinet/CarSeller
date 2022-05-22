@@ -85,6 +85,14 @@ function List(props: any) {
           <CarCard car={car} key={car.carId} />
         ))}
       </div>
+      <div className="pagination">
+        <button>
+          <span>{"<"}</span>
+        </button>
+        <button>
+          <span>{">"}</span>
+        </button>
+      </div>
     </div>
   );
 }

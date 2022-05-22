@@ -30,6 +30,9 @@ h2 {
 .forlinks {
   text-decoration: none !important;
 }
+.forlinks:hover {
+  text-decoration: underline !important;
+}
 
 .address {
   width: 20%;

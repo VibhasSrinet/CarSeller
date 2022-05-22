@@ -12,15 +12,15 @@ function Header() {
           <span>Xtremecars</span>
         </Link>
         <div className="mid-navs">
-          <Link className="nav-link" to="/">
+          <Link className="nav-link" to="#">
             New Cars
           </Link>
 
-          <Link className="nav-link" to="/">
+          <Link className="nav-link" to="#">
             Used Cars
           </Link>
         </div>
-        <Link className="nav-link" to="/">
+        <Link className="nav-link" to="#">
           My profile
         </Link>
       </nav>

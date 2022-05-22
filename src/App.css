@@ -39,8 +39,23 @@
 }
 
 .List {
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.pagination {
+  padding-right: 1.4rem;
+  align-self: flex-end;
+}
+
+.pagination button {
+  margin-top: 1rem;
+  background-color: white;
+  height: 2rem;
+  width: 2rem;
+  border: 0.5px solid black;
+  margin-left: 1rem;
 }
