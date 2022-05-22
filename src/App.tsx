@@ -12,8 +12,8 @@ import {
   Route,
   useNavigate,
 } from "react-router-dom";
-import BookingDetails from "./Components/BookingDetails";
-import Success from "./Components/Success";
+import BookingDetails from "./Components/BookingDetails/BookingDetails";
+import Success from "./Components/Success/Success";
 function App() {
   const navigate = useNavigate();
   const [carList, setCarList] = useState(CarList);
