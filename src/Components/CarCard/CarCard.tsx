@@ -4,6 +4,7 @@ import "./CarCard.css";
 import rightArrow from "../../asset/blackArrow.png";
 function CarCard(props: any) {
   return (
+    // creating a clickable card for each car
     <Link to={`/carDetail/${props.car.carId}`}>
       <div className="CarCard"></div>
       <div className="card">

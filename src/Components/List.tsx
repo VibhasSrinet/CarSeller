@@ -2,12 +2,15 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import CarCard from "./CarCard/CarCard";
 function List(props: any) {
+  // creating classes for category tabs
   const [classViewAll, setViewAll] = useState("category active");
   const [classSedan, setSedan] = useState("category");
   const [classSUV, setSUV] = useState("category");
   const [classHatchback, setHatchback] = useState("category");
   const [classCoupe, setCoupe] = useState("category");
+  // receiving the searched word via route
   const { searchText } = useParams();
+  // maintaing a state of carList
   const [carList, setcarList] = useState(props.carList);
   useEffect(() => {
     setcarList(() => {
@@ -20,6 +23,8 @@ function List(props: any) {
       return x;
     });
   }, []);
+
+  // a function to reset classes of nav
   const reset = () => {
     setCoupe("category");
     setHatchback("category");
@@ -27,6 +32,8 @@ function List(props: any) {
     setSedan("category");
     setViewAll("category");
   };
+
+  // a function to change carList as per the category tab selected
   const getCarList = (carType: string) => {
     reset();
     if (carType === "all") {
@@ -55,6 +62,7 @@ function List(props: any) {
   };
   return (
     <div className="List">
+      {/* a category nav to set list as per the type selected*/}
       <nav>
         <div className="featured-headings">
           <div className={classViewAll} onClick={() => getCarList("all")}>
@@ -80,6 +88,7 @@ function List(props: any) {
       <div style={{ margin: "2rem 0 0 2rem" }}>
         <h3>{carList.length} total results</h3>
       </div>
+      {/* display list selected here*/}
       <div className="cards-group">
         {carList.map((car: any) => (
           <CarCard car={car} key={car.carId} />

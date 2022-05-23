@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Success.css";
 function Success() {
   return (
+    // display a static success page after booking
     <div className="Success">
       <div className="successBox">
         <img
@@ -17,7 +18,7 @@ function Success() {
           <Link to="#">
             <p className="download">Download</p>
           </Link>
-          <span>the booking summary</span>
+          <span>the booking summary </span>
         </div>
       </div>
       <div className="explore">

@@ -16,7 +16,9 @@ import BookingDetails from "./Components/BookingDetails/BookingDetails";
 import Success from "./Components/Success/Success";
 function App() {
   const navigate = useNavigate();
+  //A state carList at App which would be passed to all child components
   const [carList, setCarList] = useState(CarList);
+  // A function to book a car , taking carId as parameter
   const bookACar = (id: string) => {
     setCarList(() => {
       return carList.map((car) => {
@@ -26,12 +28,13 @@ function App() {
         return car;
       });
     });
+    // after booking navigate to success page
     navigate("/success");
   };
   return (
     <div className="App">
       <Header />
-
+      {/* Adding routes*/}
       <Routes>
         <Route path="/" element={<Home carList={carList} />}></Route>
         <Route
@@ -48,7 +51,6 @@ function App() {
         ></Route>
         <Route path="success" element={<Success />}></Route>
       </Routes>
-
       <Footer />
     </div>
   );

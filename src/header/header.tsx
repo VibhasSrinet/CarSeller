@@ -5,10 +5,11 @@ import "./header.css";
 import { Link } from "react-router-dom";
 function Header() {
   return (
+    //Creating a head navbar common across all pages
     <div className="Header">
       <nav className="navbar navbar-dark bg-dark">
         <Link className="navbar-brand" to="/">
-          <img src={logo} />
+          <img src={logo} alt="" />
           <span>Xtremecars</span>
         </Link>
         <div className="mid-navs">

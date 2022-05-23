@@ -7,18 +7,26 @@ import rightArrow from "../../asset/right.png";
 import blackArrow from "../../asset/blackArrow.png";
 
 function Home(props: any) {
+  // class for each category nav
   const classArray = ["sedan", "suv", "hatchback", "coupe"];
+  // using index for hero Image
   const [index, setIndex] = useState(0);
+  // classes for hero section
   const [classes, setClasses] = useState("herosection sedan");
+  // classes for featured navbar
   const [classPopular, setClassPopular] = useState("category active");
   const [classJust, setClassJust] = useState("category");
   const [classUpcoming, setClassUpcoming] = useState("category");
+  // a list as a state as per featured tab selected
   const [featuredList, setfeaturedList] = useState(props.carList);
+  // a state to maintain what searched in search bar
   const [searchText, setSearchText] = useState("");
   const [classSedan, setSedan] = useState("activated");
   const [classSUV, setSUV] = useState("");
   const [classHatchback, setHatchback] = useState("");
   const [classCoupe, setCoupe] = useState("");
+
+  // a function to reset all classes to empty
   const reset = () => {
     setCoupe("");
     setHatchback("");
@@ -26,6 +34,7 @@ function Home(props: any) {
     setSedan("");
   };
 
+  // a function to activate nav and change hero image
   const setActivation = (carType: string) => {
     reset();
     if (carType === "Sedan") {
@@ -51,6 +60,8 @@ function Home(props: any) {
       return featuredList.filter((item: any) => item.isBooked);
     });
   }, []);
+
+  // a function to change hero image on arrow click
   const changeBKG = (y: number) => {
     reset();
     let newClasses = "herosection ";
@@ -71,6 +82,8 @@ function Home(props: any) {
         setCoupe("activated");
     }
   };
+
+  // a function to set list state based on just launched
   const listofJustLaunched = () => {
     setClassJust("category active");
     setClassPopular("category");
@@ -85,10 +98,13 @@ function Home(props: any) {
       });
     });
   };
+
+  // a function to set search state on change in input
   const handleChange = (e: any) => {
     setSearchText(e.target.value);
   };
 
+  // a function to set list state based on popular
   const listofPopular = () => {
     setClassJust("category");
     setClassPopular("category active");
@@ -98,6 +114,7 @@ function Home(props: any) {
     });
   };
 
+  // a function to set list state based on upcoming cars
   const listofUpcoming = () => {
     setClassJust("category");
     setClassPopular("category");
@@ -114,6 +131,7 @@ function Home(props: any) {
   };
   return (
     <div className="Home">
+      {/* top category nav bar */}
       <div className="topnav">
         <div
           style={{ cursor: "pointer" }}
@@ -144,6 +162,7 @@ function Home(props: any) {
           Coupe
         </div>
       </div>
+      {/* hero section with image change on arrow icons */}
       <div className="homeSection">
         <div className={classes}>
           <div className="row">
@@ -182,6 +201,7 @@ function Home(props: any) {
         <p className="heading">
           Featured <b>Cars</b>
         </p>
+        {/* featured nav bar */}
         <nav>
           <div className="featured-headings">
             <div className={classPopular} onClick={listofPopular}>
@@ -201,6 +221,7 @@ function Home(props: any) {
             </Link>
           </div>
         </nav>
+        {/* list of cars as per featured tab selected */}
         <div className="cards-group">
           {featuredList.map((car: any) => (
             <CarCard car={car} key={car.carId} />

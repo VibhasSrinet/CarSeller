@@ -3,7 +3,9 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./carDetails.css";
 function CarDetails({ carList }: any) {
+  // getting id passed in route
   const { id } = useParams();
+  // maintaining a state of a car
   const [carItem, setCarItem] = useState({
     carName: "",
     isBooked: false,
@@ -17,11 +19,13 @@ function CarDetails({ carList }: any) {
     interiorFinishes: [],
     cost: "",
   });
+  //getting car from the id received
   useEffect(() => {
     const carItem = carList.find((car: any) => car.carId === id);
     setCarItem(carItem);
   }, []);
   return (
+    // displaying the details as per the car value received from id
     <div className="CarDetails">
       <div className="details-images">
         <p className="carName">{carItem.carName}</p>
@@ -103,6 +107,7 @@ function CarDetails({ carList }: any) {
             <b>{carItem.cost}</b>
           </h4>
         </div>
+        {/*Book button only active when car is not previously booked*/}
         <Link to={`/bookingDetails/${id}`} state={{ carItem: carItem }}>
           <button className="bookButton" disabled={carItem.isBooked}>
             BOOK NOW

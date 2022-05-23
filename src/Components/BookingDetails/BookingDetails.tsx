@@ -5,7 +5,9 @@ import "./BookingDetails.css";
 import blackArrow from "../../asset/blackArrow.png";
 import { useNavigate } from "react-router-dom";
 function BookingDetails(props: any) {
+  // receiving id from the route
   const { id } = useParams();
+  // maintaining carItem as a state
   const [carItem, setCarItem] = useState({
     carId: "",
     carName: "",
@@ -20,6 +22,8 @@ function BookingDetails(props: any) {
     interiorFinishes: [],
     cost: "",
   });
+
+  // setting carItem based in the id received
   useEffect(() => {
     const carItem = props.carList.find((car: any) => car.carId === id);
     setCarItem(carItem);
@@ -29,7 +33,11 @@ function BookingDetails(props: any) {
     formState: { errors },
     handleSubmit,
   } = useForm();
+
+  //creating userInfo state
   const [userInfo, setUserInfo] = useState();
+
+  // setting userInfo state and booking the car on submit click
   const onSubmit = (data: any) => {
     setUserInfo(data);
     props.onBook(carItem.carId);
@@ -37,6 +45,7 @@ function BookingDetails(props: any) {
   const navigate = useNavigate();
   return (
     <div className="BookingDetails">
+      {/* displaying car Details here */}
       <div className="carInfo">
         <p style={{ fontSize: "1.6rem" }}>
           Car <b>Details</b>
@@ -63,6 +72,7 @@ function BookingDetails(props: any) {
         <p style={{ fontSize: "1.6rem", textAlign: "start" }}>
           Booking <b>Details</b>
         </p>
+        {/* a form to store user Information with validation enabled*/}
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="form-elements">
             <div className="input">

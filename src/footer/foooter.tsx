@@ -6,6 +6,7 @@ import twitter from "../asset/twitter.png";
 import "./footer.css";
 function Footer() {
   return (
+    // creating a footer common across all screens
     <div className="Footer">
       <div className="contacts">
         <h2>Contact</h2>
